@@ -1,20 +1,15 @@
 import { Scenarii } from "./js/scenarii.js"
-import { Investigators } from "./js/investigators.js"
+import { PlayerCards } from "./js/player_cards.js"
 import { Presentation } from "./js/presentation.js"
-
-function presentation(){
-  console.log("PRÉSENTATION")
-
-}
 
 class App{
   constructor(){
     this.initMenu()
-
+    new Presentation();
   }
 
   initMenu(){
-    let menu_content = [{"text":"PRÉSENTATION","class":"new Presentation()"},{"text":"INVESTIGATEURS", "class":"new Investigators()"},{"text":"SCÉNARII","class":"new Scenarii()"}]
+    let menu_content = [{"text":"PRÉSENTATION","class":"new Presentation()"},{"text":"INVESTIGATEURS", "class":"new PlayerCards()"},{"text":"SCÉNARII","class":"new Scenarii()"}]
     console.log(menu_content)
     let div_menu = document.getElementById('menu')
     for (let item of menu_content ){

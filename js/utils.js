@@ -3,6 +3,11 @@ export function resetContent(){
   content.innerHTML = ""
 }
 
+export function resetSidebar(){
+  let sidebar = document.getElementById("sidebar");
+  sidebar.innerHTML = ""
+}
+
 export function scrollDisplay(){
   const observer = new IntersectionObserver( observables => {
     console.log(observables);
