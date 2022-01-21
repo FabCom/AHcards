@@ -183,6 +183,7 @@ border-radius: 20px;
 
 .modal > .card {
   width: 100%;
+  max-height: none;
 }
 
 .modal > .card > .card-body > .right-side > p {
